@@ -5,7 +5,7 @@
     font-size: 20px;
 }
 body{
-    height: 100vh;
+    height: 300vh;
     width: 100vw;
     /* border: 20px red solid; */
 }
@@ -18,6 +18,9 @@ body{
     align-items: center;
     height: 30vh;
     width: 100vw;
+    position:sticky;
+    left: 0;
+    top: 0;
 }
 .promotion--big{
     height: 80%;
@@ -62,6 +65,9 @@ img{
     width: 20%;
 }
 .products-container{
+    position:sticky;
+    left: 0;
+    top: 0;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -84,4 +90,7 @@ img{
 }
 .product:hover{
     box-shadow:5px 5px 10px 10px grey;
+}
+.hidden {
+    display: none;
 }
