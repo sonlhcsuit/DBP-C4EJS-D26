@@ -1,4 +1,5 @@
 {
     "workbench.preferredDarkColorTheme": "Default Light+",
-    "workbench.iconTheme": "vs-seti"
+    "workbench.iconTheme": "vs-seti",
+    "liveServer.settings.port": 5501
 }

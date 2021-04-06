@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    /* border: 20px red solid; */
+}
+.border {
+    border: 2px solid red;
+}
+.promotions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+}
+.promotion--big{
+    height: 80%;
+    width:50%;
+}
+.promotion--small{
+    height: 80%;
+    width:20%;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.shock-price-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+}
+.shock-price-title {
+    width: 70vw;
+    height: 5vh;
+    border: 1px solid black;
+
+}
+.shock-prices {
+
+    height: 25vh ;
+    width: 70vw;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shock-price{
+    height: 100%;
+    width: 20%;
+}
+.products-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products{
+    width: 70vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product{
+    padding: 10px;
+    height: 30vh;
+    width: 20%;
+}
+.product-image{
+    height: 80%;
+}
+.product:hover{
+    box-shadow:5px 5px 10px 10px grey;
+}
