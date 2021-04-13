@@ -1,5 +1,6 @@
 {
-    "workbench.preferredDarkColorTheme": "Default Light+",
+    "workbench.preferredDarkColorTheme": "Monokai Pro",
     "workbench.iconTheme": "vs-seti",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5500,
+    "workbench.colorTheme": "Monokai"
 }
