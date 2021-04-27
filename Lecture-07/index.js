@@ -188,11 +188,70 @@ const GUEST_LIST = {
     Sam: "Argentina"
   }
 
-
 function greeting(person){
     if(GUEST_LIST.hasOwnProperty(person)){
         return "Hi! I'm "+ person+", and I'm from "+GUEST_LIST[person]+"."
     }else{
         return "Hi! I'm a guest."
     }
+}
+function keysAndValues(object){
+    let keys = []
+    let values = []
+    for(let k in object){
+        keys.push(k)
+        values.push(object[k])
+    }
+    return [keys,values]
+}
+
+function freeShipping(order){
+    let sum = 0;
+    for(let k in order){
+        sum = sum + ( parseFloat(order[k]) || 0 )
+    }
+    // console.log(sum)
+    return sum > 50
+}
+// console.log(freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
+
+// console.log(freeShipping({ "Flatscreen TV": 0 }))
+
+// console.log(freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
+
+function time(rate,people,walls){
+    let result = (rate.minutes * rate.people * walls) / (rate.walls * people)
+    return result
+}
+const rate = {
+	people: 4,
+	 walls: 9,
+	 minutes: 63 
+}
+
+// time(rate,people,walls) ➞ 16
+// console.log(time(rate,7,4,6,7,8,9))
+
+let abc= 123;
+// console.log(typeof time)
+
+// higher order function 
+// callback
+
+// emit 
+// trigger 
+
+function A(){
+    console.log('From A w/ love')
+}
+function B(callback){
+    console.log('From B w/ love')
+}
+
+
+function fib(n){
+    if (n==1 || n == 2){
+        return 1
+    }
+    return fib(n-1)+fib(n-2)
 }
